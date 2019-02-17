@@ -1,0 +1,90 @@
+body{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    letter-spacing: 5px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 70px;
+
+    -webkit-text-stroke: 1px black;
+}
+
+button{
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+button:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+#bouncingBall{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: blue;
+    display: none;
+    left: 60;
+    bottom: 60;
+    margin: -60px;
+}
+
+#character{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+    left: 800px;
+    bottom: 500px;
+    margin: -30px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2px;
+}
+
+#counter{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    right: 50px;
+    top: 50px;
+    display: none;
+}
+
+.eyes{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#eyesContainer{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mouth{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
