@@ -46,6 +46,11 @@ const resetInfo = () => {
     document.getElementsByClassName('eyes')[0].innerText = '';
     document.getElementsByClassName('eyes')[1].style.backgroundColor = 'black';
     document.getElementsByClassName('eyes')[1].innerText = '';
+
+    if(document.body.clientWidth <= 1024){
+        console.log('oi');
+        document.getElementById('mobileControl').style.display = 'flex';
+    }
 }
 
 const endGame = () =>{
@@ -108,6 +113,11 @@ const movesLikeJagger = () => {
         document.getElementById('bouncingBall').style.bottom = vertical + 'px';
         
         document.onkeypress = e => command = e.key;
+
+        document.querySelector('#W-btn').addEventListener('click', () => command = 'w');
+        document.querySelector('#A-btn').addEventListener('click', () => command = 'a');
+        document.querySelector('#S-btn').addEventListener('click', () => command = 's');
+        document.querySelector('#D-btn').addEventListener('click', () => command = 'd');
         
         if(command === 'w'){
             charY += speed;
